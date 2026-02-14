@@ -1,4 +1,4 @@
-Install Grafana
+Install Grafana INSTRUCTIONS
 1. Copy paste the following in a YAML file, name it grafana.yaml
 datasources:
   datasources.yaml:
@@ -16,6 +16,7 @@ helm repo add grafana https://grafana.github.io/helm-charts
 3. Install Grafana
 kubectl create namespace grafana
 
+MODIFIQUEMOS ESTA ARCHIVO PARA SIMULAR CAMBIOS
 helm install grafana grafana/grafana \
     --namespace grafana \
     --set persistence.storageClassName="gp2" \
